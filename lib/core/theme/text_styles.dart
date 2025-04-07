@@ -1,40 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'colors.dart';
-import 'app_fonts.dart';
 
 class AppTextStyles {
-  static const TextStyle headlineLarge = TextStyle(
+  static final TextStyle headlineLarge = GoogleFonts.cairo(
     fontSize: 28,
     fontWeight: FontWeight.bold,
-    fontFamily: AppFonts.primaryFont,
-    color: AppColors.primary,
+    color: AppColors.textPrimary,
   );
 
-  static const TextStyle headlineMedium = TextStyle(
+  static final TextStyle headlineMedium = GoogleFonts.cairo(
     fontSize: 22,
     fontWeight: FontWeight.bold,
-    fontFamily: AppFonts.primaryFont,
     color: AppColors.textPrimary,
   );
 
-  static const TextStyle bodyLarge = TextStyle(
+  static final TextStyle bodyLarge = GoogleFonts.cairo(
     fontSize: 18,
     fontWeight: FontWeight.w500,
-    fontFamily: AppFonts.primaryFont,
     color: AppColors.textPrimary,
   );
 
-  static const TextStyle bodyMedium = TextStyle(
+  static final TextStyle bodyMedium = GoogleFonts.cairo(
     fontSize: 16,
     fontWeight: FontWeight.normal,
-    fontFamily: AppFonts.primaryFont,
     color: AppColors.textPrimary,
   );
 
-  static const TextStyle caption = TextStyle(
+  static final TextStyle caption = GoogleFonts.cairo(
     fontSize: 14,
     fontWeight: FontWeight.normal,
-    fontFamily: AppFonts.primaryFont,
     color: AppColors.textSecondary,
   );
 }

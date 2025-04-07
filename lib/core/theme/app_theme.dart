@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'colors.dart';
 import 'text_styles.dart';
 
@@ -8,22 +9,17 @@ class AppTheme {
       brightness: Brightness.light,
       primaryColor: AppColors.primary,
       scaffoldBackgroundColor: AppColors.background,
-      fontFamily: 'Cairo',
 
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: AppColors.primary,
         elevation: 0,
         centerTitle: true,
         titleTextStyle: AppTextStyles.headlineMedium,
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
 
-      textTheme: const TextTheme(
-        headlineLarge: AppTextStyles.headlineLarge,
-        headlineMedium: AppTextStyles.headlineMedium,
-        bodyLarge: AppTextStyles.bodyLarge,
-        bodyMedium: AppTextStyles.bodyMedium,
-        bodySmall: AppTextStyles.caption,
+      textTheme: GoogleFonts.cairoTextTheme(
+        ThemeData.light().textTheme,
       ),
 
       inputDecorationTheme: InputDecorationTheme(
@@ -39,7 +35,7 @@ class AppTheme {
 
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
+          backgroundColor: AppColors.textPrimary,
           foregroundColor: Colors.white,
           textStyle: AppTextStyles.bodyLarge,
           shape: RoundedRectangleBorder(

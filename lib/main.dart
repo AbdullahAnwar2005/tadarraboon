@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tadarraboon/features/auth/presentation/screens/login_screen.dart';
+import 'package:tadarraboon/features/auth/presentation/screens/welcome_screen.dart';
 import 'core/theme/app_theme.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class TadarraboonApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tadarraboon',
       theme: AppTheme.lightTheme,
-      home: LoginScreen() // Replace with your first screen
+      debugShowCheckedModeBanner: false,
+      home: WelcomeScreen(),
     );
   }
 }

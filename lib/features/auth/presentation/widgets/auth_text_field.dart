@@ -21,9 +21,12 @@ class AuthTextField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          label,
-          style: AppTextStyles.bodyLarge,
+        Align(
+          alignment: Alignment.centerRight,
+          child: Text(
+            label,
+            style: AppTextStyles.bodyLarge,
+          ),
         ),
         const SizedBox(height: 8),
         TextFormField(
@@ -31,6 +34,7 @@ class AuthTextField extends StatelessWidget {
           keyboardType: keyboardType,
           decoration: InputDecoration(
             hintText: hint,
+            hintTextDirection: TextDirection.rtl
           ),
         ),
       ],
